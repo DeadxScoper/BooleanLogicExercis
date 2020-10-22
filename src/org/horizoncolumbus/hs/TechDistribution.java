@@ -10,10 +10,10 @@ public class TechDistribution {
         boolean haveCTE = true;
         boolean atHome = false;
 
-        if((isJunior || isSenior) && haveCTE){
+        if(isJunior || (isSenior && haveCTE)){
             System.out.println("Windows Laptop Given");
         }
-        else if((isTeacher || isAdmin) && atHome){
+        else if(isTeacher || (isAdmin && atHome)){
             System.out.println("Macbook Given");
         }
         else{
